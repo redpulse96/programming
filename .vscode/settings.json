@@ -1,0 +1,7 @@
+{
+  "java.project.sourcePaths": [
+    "Java",
+    "DesignPatterns/StrategyPattern",
+    "DesignPatterns/StrategyPattern/CounterStrike"
+  ]
+}
