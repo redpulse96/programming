@@ -1,6 +1,7 @@
 {
   "java.project.sourcePaths": [
     "Java",
+    "GeeksForGeeks/LinkedLists",
     "DesignPatterns/StrategyPattern",
     "DesignPatterns/StrategyPattern/CounterStrike"
   ]

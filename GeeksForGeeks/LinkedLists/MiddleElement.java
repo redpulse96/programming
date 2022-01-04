@@ -1,21 +1,7 @@
-import java.util.*;
-import java.io.*;
-
-class Node {
-  int data;
-  Node next;
-
-  Node(int d) {
-    data = d;
-    next = null;
-  }
-}
-
 public class MiddleElement {
-  public static void main() {
-    
-  }
-  
+
+  public static void main() {}
+
   int getMiddle(Node head) {
     // Your code here.
     Node behind = head;

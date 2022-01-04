@@ -1,6 +1,6 @@
 // { Driver Code Starts
 
-class ReverseLinkedList {
+class ReverseInSize {
   static Node head;
 
   public static void main(String[] args) {
@@ -15,8 +15,9 @@ class ReverseLinkedList {
       tail = tail.next;
     }
 
-    Solution1 ob = new Solution1();
-    Node res = ob.reverseList(head);
+    int k = 4;
+    Solution ob = new Solution();
+    Node res = ob.reverse(head, k);
     printList(res);
     System.out.println();
   }
@@ -29,20 +30,21 @@ class ReverseLinkedList {
   }
 }
 
-class Solution1 {
+// } Driver Code Ends
 
-  public Node reverseList(Node head) {
-    // Your code here.
-    Node prev = null;
-    Node curr = head;
+class Solution {
 
-    while (curr != null) {
-      Node tmp = curr.next;
-      curr.next = prev;
-      prev = curr;
-      curr = tmp;
+  public Node reverse(Node head, int k) {
+    // Your code here
+    Node node = head;
+    Node prev = head;
+
+    while (node != null) {
+      Node tmp = node.next;
+      node.next = prev;
+      prev = node;
+      node = tmp;
     }
-
     return prev;
   }
 }
